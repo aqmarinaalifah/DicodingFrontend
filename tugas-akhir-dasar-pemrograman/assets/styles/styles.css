@@ -1,0 +1,197 @@
+body {
+  font-family: "Roboto-slab", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+.header-title {
+  font-family: "Lobster", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-image: url("../images/pancake.jpg");
+  background-size: contain;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 350px;
+  position: relative;
+}
+
+.figcaption-header {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.figcaption-header-detail {
+  color: #dfdddd;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  width: 100%;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+nav {
+  background-color: #e8751a;
+  padding: 5px;
+
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+
+  color: white;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+.card figure img {
+  width: 250px;
+  height: 150px;
+}
+
+figure {
+  margin: 0;
+}
+
+.carousel-item {
+  cursor: pointer;
+  /* Pointer to new page */
+}
+
+aside figcaption {
+  margin-top: -8px;
+  padding: 0;
+}
+
+#carousel-img-desc {
+  font-size: 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+section ul,
+ol {
+  margin-bottom: 0;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: #fda403;
+  text-align: center;
+  font-weight: bold;
+}
+
+.carousel {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.carousel p {
+  font-family: "Lobster", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin: 5px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.button img {
+  width: 20px;
+  cursor: pointer;
+  opacity: 40%;
+}
+
+.button img:hover {
+  opacity: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  .card figure img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-title {
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .figcaption-header-detail {
+    font-size: 6px;
+  }
+
+  nav ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+
+  .card figure img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  .card figure img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Breakfast Recipes</title>
+
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>Pancakes</h1>
+        <figcaption class="figcaption-header">
+          <a
+            class="figcaption-header-detail"
+            href="https://www.freepik.com/free-photo/stack-homemade-pancakes-with-sweet-syrup-generated-by-ai_42664088.htm#fromView=uuid=a4d45948-64cb-4478-a735-6075be9e9ffe"
+            target="_blank"
+          >
+            Image by vecstock on Freepik
+          </a>
+        </figcaption>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#ingredients">Ingredients</a>
+          </li>
+          <li>
+            <a href="#steps">Steps</a>
+          </li>
+          <li>
+            <a href="#tips">Tips</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- https://www.vocabulary.com/dictionary/pancake#-->
+      <!-- https://www.bbcgoodfood.com/recipes/easy-pancakes-->
+      <article>
+        <section id="about" class="card">
+          <h2>About</h2>
+          <p>
+            A pancake is a breakfast dish, a flat cake that's made by pouring
+            batter into a hot pan and frying it on both sides. Many people like
+            to eat their pancakes with a drizzle of maple syrup. While pancakes
+            can be savory, they're more often a sweet breakfast food in the US.
+          </p>
+        </section>
+        <section id="ingredients" class="card">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>100g plain flour</li>
+            <li>2 large eggs</li>
+            <li>300ml milk</li>
+            <li>
+              1 tbsp sunflower or vegetable oil, plus a little extra for frying
+            </li>
+            <li>lemon wedges, to serve (optional)</li>
+            <li>caster sugar, to serve (optional)</li>
+          </ul>
+        </section>
+        <section id="steps" class="card">
+          <h2>Steps</h2>
+          <ol>
+            <li>
+              Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower
+              or vegetable oil and a pinch of salt into a bowl or large jug,
+              then whisk to a smooth batter. This should be similar in
+              consistency to single cream.
+            </li>
+            <li>
+              Set aside for 30 mins to rest if you have time, or start cooking
+              straight away.
+            </li>
+            <li>
+              Set a medium frying pan or crêpe pan over a medium heat and
+              carefully wipe it with some oiled kitchen paper.
+            </li>
+            <li>
+              When hot, cook your pancakes for 1 min on each side until golden,
+              using around half a ladleful of batter per pancake. Keep them warm
+              in a low oven as you make the rest.
+            </li>
+            <li>
+              Serve with lemon wedges and caster sugar, or your favourite
+              filling.
+            </li>
+          </ol>
+        </section>
+        <section id="tips" class="card">
+          <h2>Tips</h2>
+          <ul>
+            <li>
+              You need a good non-stick pan to avoid any bits getting left
+              behind. It also means you don't have to keep wiping the pan with
+              oil before cooking each pancake.
+            </li>
+            <li>
+              The batter is supposed to be thin as it's a classic pancake mix.
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <aside>
+        <div class="card">
+          <h3>Other recipes</h3>
+          <div class="carousel">
+            <div class="button" onclick="onLeft()">
+              <img
+                longdesc="https://www.flaticon.com/free-icons/back"
+                src="assets/icons/left-arrow.png"
+              />
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img id="carousel-image" src="assets/images/french-toast.jpg" />
+                <figcaption class="figcaption-aside">
+                  <a
+                    id="carousel-img-desc"
+                    class="figcaption-detail"
+                    href="https://www.freepik.com/free-ai-image/view-delicious-bread-sandwiches-with-bananas_69853894.htm#fromView=uuid=95fdd9fb-f333-410f-90b1-ce3fd9d9c009"
+                    target="_blank"
+                  >
+                    Image by freepik
+                  </a>
+                </figcaption>
+              </figure>
+              <p id="carousel-desc">French Toast</p>
+            </div>
+            <div class="button" onclick="onRight()">
+              <img
+                longdesc="https://www.flaticon.com/free-icons/next"
+                src="assets/icons/right-arrow.png"
+              />
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Submission: Final Project Basic Web, Aqmarina, Dicoding Academy</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
